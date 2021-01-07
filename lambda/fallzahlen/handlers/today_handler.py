@@ -22,12 +22,12 @@ class TodayIntentHandler(AbstractRequestHandler):
             device_id = handler_input.request_envelope.context.system.device.device_id
 
             address_client = handler_input.service_client_factory.get_device_address_service()
-            address = address_client.get_country_and_postal_code
+            address = address_client.get_country_and_postal_code(device_id)
             print(f"Post code: {address.postal_code}")
 
             # TODO: check for valid postcode
             # TODO: Save post code, district ID, state ID data in (dynamodb) database for caching
-            location = get_location_info('38440')
+            location = get_location_info(address.postal_code)
             print(location) # TODO: remove logs, if exception handling was added
             district_id = find_district_id(location.district)
             state_id = find_state_id(location.state)
@@ -53,7 +53,6 @@ class TodayIntentHandler(AbstractRequestHandler):
             permission_speak = "Um Daten für deinen Landkreis und dein Bundesland zu erhalten, erteile uns bitte die Erlaubnis deine Adresse zu verwenden und trage deine Postleitszahl ein. " +\
                                "Dies kannst du in der Alexa App in den Skill Details tun."
             speak_text = speak_text + f"<p>{permission_speak}</p>"
-
 
         return (
             handler_input.response_builder

@@ -14,16 +14,31 @@
         "name": "alexa:devices:all:address:country_and_postal_code:read"
       }
     ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "containsAds": false,
+      "isChildDirected": false,
+      "isExportCompliant": false,
+      "locales": {
+        "de-DE": {
+          "privacyPolicyUrl": "https://corona-zahlen.liveyourproject.com/datenschutz.html",
+          "termsOfUseUrl": "https://corona-zahlen.liveyourproject.com/nutzungsbedingungen.html"
+        }
+      },
+      "usesPersonalInfo": true
+    },
     "publishingInformation": {
-      "category": "KNOWLEDGE_AND_TRIVIA",
-      "distributionCountries": [],
-      "isAvailableWorldwide": true,
+      "category": "NEWS",
+      "distributionCountries": [
+        "DE"
+      ],
+      "isAvailableWorldwide": false,
       "locales": {
         "de-DE": {
           "description": "Mit diesem Skill kannst du dir die aktuellsten Corona Fälle und Statistiken abfragen. Wir geben dir Auskunft über neue Erkrankungen, neue Todesfälle und die aktuelle 7-Tagesinziden für Deutschland, dein Bundesland und deinen Landkreis/Stadt.\n\nDieses Projekt ist Open Source und kann auf Github gefunden werden. Jede Erweiterung ist willkommen.\nhttps://github.com/LiveYourProject/corona-zahlen-alexa",
           "examplePhrases": [
-            "Alexa, öffne hallo welt",
-            "Wie viele Fälle gibt es heute?",
+            "Alexa, starte Corona Zahlen",
+            "Wie viele Erkrankungen gibt es heute?",
             "Wie sind die Corona zahlen heute?"
           ],
           "keywords": [
@@ -53,10 +68,11 @@
           "largeIconUri": "file://assets/de-DE_largeIcon.png",
           "name": "Corona Zahlen",
           "smallIconUri": "file://assets/de-DE_smallIcon.png",
-          "summary": "Frage Alexa nach den aktuellen Corona Fällen in deinem Landkreis."
+          "summary": "Frage Alexa nach den aktuellen Corona Fällen in deinem Landkreis.",
+          "updatesDescription": "Das ist die erste Version von dem Skill Corona Zahlen.\n\n- Neue Erkrankungen & Todesfälle für Deutschland\n- Neue Erkrankungen & Todesfälle für dein Bundesland (anhand deiner Postleitszahl)\n- Neue Erkrankungen & Todesfälle für deinen Ort (anhand deiner Postleitszahl)"
         }
       },
-      "testingInstructions": "Sample Testing Instructions."
+      "testingInstructions": "Alexa, starte Corona Zahlen"
     }
   }
 }
