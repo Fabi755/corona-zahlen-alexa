@@ -20,15 +20,40 @@
       "isAvailableWorldwide": true,
       "locales": {
         "de-DE": {
-          "description": "Sample Full Description",
+          "description": "Mit diesem Skill kannst du dir die aktuellsten Corona Fälle und Statistiken abfragen. Wir geben dir Auskunft über neue Erkrankungen, neue Todesfälle und die aktuelle 7-Tagesinziden für Deutschland, dein Bundesland und deinen Landkreis/Stadt.\n\nDieses Projekt ist Open Source und kann auf Github gefunden werden. Jede Erweiterung ist willkommen.\nhttps://github.com/LiveYourProject/corona-zahlen-alexa",
           "examplePhrases": [
-            "Alexa öffne hallo welt",
-            "hallo",
-            "hilfe"
+            "Alexa, öffne hallo welt",
+            "Wie viele Fälle gibt es heute?",
+            "Wie sind die Corona zahlen heute?"
           ],
-          "keywords": [],
-          "name": "Corona Fallzahlen",
-          "summary": "Sample Short Description"
+          "keywords": [
+            "corona",
+            "covid19",
+            "fälle",
+            "zahlen",
+            "news",
+            "nachrichten",
+            "politik",
+            "pandemie",
+            "aktuell",
+            "virus",
+            "krank",
+            "krankheit",
+            "robertkochinstitut",
+            "rki",
+            "erkrankungen",
+            "todesfälle",
+            "regeln",
+            "deutschland",
+            "bundesland",
+            "ort",
+            "stadt",
+            "gemeinde"
+          ],
+          "largeIconUri": "file://assets/de-DE_largeIcon.png",
+          "name": "Corona Zahlen",
+          "smallIconUri": "file://assets/de-DE_smallIcon.png",
+          "summary": "Frage Alexa nach den aktuellen Corona Fällen in deinem Landkreis."
         }
       },
       "testingInstructions": "Sample Testing Instructions."
