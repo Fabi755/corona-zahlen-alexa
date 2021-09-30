@@ -10,7 +10,7 @@ class LocationInfo:
 
 def get_location_info(post_code):
 	# TODO: remove api key to prevent external usage after github publishing
-	response = requests.get(url=f'https://maps.googleapis.com/maps/api/geocode/json?address={post_code}%20Deutschland&key=AIzaSyBg42sqaU1tOy9NxlxpnuhYaR0kGrf0il8&language=de')
+	response = requests.get(url=f'https://maps.googleapis.com/maps/api/geocode/json?address={post_code}%20Deutschland&key=AIzaSyCtlw309ZImOVZFcbwhg0fXjrNnhtV_2Cg&language=de')
 	json = response.json()
 	print(json) # TODO: remove logs, if exception handling was added
 
